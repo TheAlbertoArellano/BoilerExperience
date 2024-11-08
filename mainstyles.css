@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    margin-top: -20px;
+    padding: 0;
+    background-color: #fff; /* Light pastel background */
+    color: #333133;
+}
+
+.logo {
+    height: 150px;
+}
+
+.search-box {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid transparent; /* Add border */
+    width: 300px;
+    background-color: #fff; /* Match to pastel yellow for Information Literacy */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+    margin: 0 auto;
+}
+
+.search-box:focus {
+    border-color: #D0BA92; /* Add a subtle border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.introduction {
+    text-align: center;
+    padding: 40px;
+    background-color: #D0BA92; /* White background for clarity */
+}
+
+.subjects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.subject {
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Different pastel colors for each subject */
+.subject[data-subject="BSS"] { background-color: #d53e4f; } /* Pastel teal */
+.subject[data-subject="HUM"] { background-color: #f46d43; } /* Pastel pink */
+.subject[data-subject="IL"]  { background-color: #fdae61; } /* Pastel yellow */
+.subject[data-subject="OC"]  { background-color: #fee08b; } /* Pastel red */
+.subject[data-subject="QR"]  { background-color: #e6f598; } /* Pastel lavender */
+.subject[data-subject="SCI"] { background-color: #abdda4; } /* Pastel green */
+.subject[data-subject="STS"] { background-color: #66c2a5; } /* Pastel orange */
+.subject[data-subject="WC"]  { background-color: #3288bd; } /* Pastel khaki */
+
+.subject:hover {
+    transform: scale(1.05); /* Slightly scale up */
+}
+
+.course-list {
+    padding: 0px;
+    background-color: #fff; /* White for course list */
+}
+
+/* Same colors for courses based on their subjects */
+.course {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #FAFAFA; /* White background for courses */
+    position: relative; /* To position the pseudo-element */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.course[data-subject="BSS"] { border-left: 4px solid #d53e4f; }
+.course[data-subject="HUM"] { border-left: 4px solid #f46d43; }
+.course[data-subject="IL"]  { border-left: 4px solid #fdae61; }
+.course[data-subject="OC"]  { border-left: 4px solid #fee08b; }
+.course[data-subject="QR"]  { border-left: 4px solid #e6f598; }
+.course[data-subject="SCI"] { border-left: 4px solid #abdda4; }
+.course[data-subject="STS"] { border-left: 4px solid #66c2a5; }
+.course[data-subject="WC"]  { border-left: 4px solid #3288bd; }
+
+.course:hover {
+    background-color: #f1f1f1; /* Light gray background on hover */
+    transform: scale(1.02); /* Slightly scale up */
+}
+.bottom-bar {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #D0BA92; /* Pastel blue for footer */
+    position: fixed; /* Fixed position to keep it at the bottom */
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left edge */
+    width: 100%; /* Full width of the viewport */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.bottom-bar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.bottom-bar a:hover {
+    color: #fff; /* Change color on hover */
+}
