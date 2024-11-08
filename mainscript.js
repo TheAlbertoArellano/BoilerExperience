@@ -508,7 +508,6 @@ const courses = {
         "SPAN 33000 Spanish And Latin American Cinema (Summer 2020 and earlier only)"
     ]    
 };
-
 // Get DOM elements
 const searchBox = document.querySelector('.search-box');
 const courseList = document.querySelector('.course-list');
@@ -526,7 +525,7 @@ function displayCourses(subject) {
 
             // Add click event listener to each course
             courseDiv.addEventListener('click', () => {
-                window.location.href = `coursedetail.html;
+                window.location.href = 'coursedetail.html';  // Redirect to coursedetail.html
             });
 
             courseList.appendChild(courseDiv);
@@ -548,8 +547,7 @@ function searchCourses() {
 
                 // Add click event listener to each searched course
                 courseDiv.addEventListener('click', () => {
-                    // Replace 'courseDetails.html' with the actual page you want to open
-                    window.location.href = `coursedetail.html?course=${encodeURIComponent(course)}`;
+                    window.location.href = 'coursedetail.html';  // Redirect to coursedetail.html
                 });
 
                 courseList.appendChild(courseDiv);
