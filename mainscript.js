@@ -526,8 +526,7 @@ function displayCourses(subject) {
 
             // Add click event listener to each course
             courseDiv.addEventListener('click', () => {
-                // Replace 'courseDetails.html' with the actual page you want to open
-                window.location.href = `coursedetail.html?course=${encodeURIComponent(course)}`;
+                window.location.href = `coursedetail.html;
             });
 
             courseList.appendChild(courseDiv);
