@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="coursedetailstyles.css">
+    <title>BoilerExperience | MA 16100</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Title Bar Styling */
+        header.title-bar {
+            background-color: #D0BA92; /* Purdue */
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            text-align: left;
+        }
+
+        header.title-bar img {
+            height: 50px;  /* Adjust size of the logo */
+            margin-right: 10px;  /* Space between logo and text */
+        }
+
+        /* Review Section Styling */
+        #course-review {
+            background-color: white;
+            border-radius: 12px;  /* Rounded corners */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Soft shadow for the two-layer effect */
+            padding: 30px;
+            width: 100%;
+            max-width: 900px;
+            margin: 20px auto;  /* Center the review section horizontally */
+            border: 10px solid #E6F598; /* Blue border around the review section */
+            padding-bottom: 40px;
+        }
+
+        /* Section Title and Rating */
+        h2, h3 {
+            color: #333133;  /* Purdue blue */
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+        }
+
+        /* Review Ratings and Section Titles */
+        .section-title {
+            font-weight: bold;
+            color: #333133;  /* Purdue blue */
+        }
+
+        .rating {
+            font-weight: bold;
+        }
+
+        /* Rating color classes */
+        .rating-5 {
+            color: green;
+        }
+
+        .rating-4 {
+            color: #4caf50; /* Light green */
+        }
+
+        .rating-3 {
+            color: #ff9800; /* Orange */
+        }
+
+        .rating-2 {
+            color: #ff5722; /* Red-orange */
+        }
+
+        .rating-1 {
+            color: red;
+        }
+
+        /* Paragraph and Text Styling */
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        /* Edit and Save Button Styling */
+        .edit-button-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .edit-button, .save-button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 8px;
+            border: none;
+        }
+
+        .edit-button {
+            background-color: #D0BA92;  /* Purdue blue */
+            color: white;
+        }
+
+        .save-button {
+            background-color: #FF9800;  /* Green for saving */
+            color: white;
+            display: none;
+        }
+
+        /* Footer Styling */
+        footer.bottom-bar {
+            text-align: center;
+            padding: 10px;
+            background-color: #D0BA92;
+            color: 333133;
+        }
+
+        footer.bottom-bar a {
+            color: 333133;
+            text-decoration: none;
+        }
+
+        /* Centering the content vertically in the viewport */
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Title Bar with Left-aligned Title -->
+    <header class="title-bar">
+        <img src="logo.png" alt="Logo">
+        <h1>BoilerExperience</h1>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content">
+        <!-- Review Section -->
+        <section id="course-review">
+            <h2><b>16100 Plane Analytic Geometry and Calculus I</b></h2>
+            <p><strong>Instructor:</strong><a href="https://www.ratemyprofessors.com/"> Dr. Smith</a>,<a href="https://www.ratemyprofessors.com/"> Dr. Jane</a>,<a href="https://www.ratemyprofessors.com/"> Dr. John</a>.</p>
+            <p><strong>Semester:</strong> Fall 2024</p>
+            <p><strong>Overall Rating:</strong> <span class="rating rating-4">3.5/5</span></p>
+            
+            <h3><b class="rating rating-5">5/5: </b><span class="section-title">Test and Assessment Format</span></h3>
+            <p>The exams were definitely challenging, but overall pretty fair. There were two midterms and a final exam. The midterms were a mix of conceptual questions and problem-solving questions, ranging from limits, derivatives (e.g., applying the power rule and chain rule), and Riemann sums (for approximating areas under curves). Each midterm was 90 minutes long. The final covered A LOT, but Dr. Smith helped a lot by giving us a study guide and reviewing key concepts in class. The tests were closed-book, but we were allowed to use calculators. I really appreciated how consistent the exam format was throughout the semester. Once you understood the types of problems, preparing became a lot easier. <a href="https://www.boilerexams.com/"> Boilerexams.com</a> has all of the exams from previous years and it makes for really good practice!</p>
+            
+            <h3><b class="rating rating-5">5/5: </b><span class="section-title">Classroom Environment and Location</span></h3>
+            <p>Dr. Smith taught the class in a medium-sized lecture hall located in MJIS. It was easy to find a seat and he was very easy to understand and hear. He was great about walking around during group work and really encouraged us to interact with each other. The class size was around 40 students, which struck a nice balance since it wasn’t too big, but still large enough to feel like a professional lecture.</p>
+            
+            <h3><b class="rating rating-4">4/5: </b><span class="section-title">Instructor Accessibility and Office Hours</span></h3>
+            <p>Dr. Smith was very approachable and offered office hours two times a week Tuesdays and Thursdays from 12-3 P.M. I visited a couple of times to clarify concepts I was struggling with, and he always took the time to explain things clearly. The only downside is that his office hours could get a bit crowded, so if you showed up right at the start, you might have to wait. That said, he was always patient and I felt like he genuinely cared about helping students succeed.</p>
+            
+            <h3><b class="rating rating-3">3/5: </b><span class="section-title">Class Time Investment Beyond Class Sessions</span></h3>
+            <p>This class was a bit more time-consuming than I initially expected. There were daily homework assignments, mostly from the textbook, and they could take a while to complete, especially the more difficult problems. Dr. Smith also assigned extra practice problems every week, but they weren’t mandatory. I did them because I wanted to be well-prepared. Apart from doing these optional practice problems, forming a study group early on really helped me keep up and better understand the material.</p>
+            
+            <h3><b class="rating rating-2">3/5: </b><span class="section-title">Grading Scale and Methodology</span></h3>
+            <p>Grading was a bit inconsistent. Dr. Smith used a standard A-F grading system with a curve depending on the classes test results, but the way homework was graded felt unpredictable at times. Some weeks he gave partial credit on homework for showing work, but other times if you didn’t get the correct answer, you barely got any credit. The exams were graded more generously, though, and I thought they did a better job of testing your understanding of the material. I appreciated the feedback Dr. Smith gave on the midterms, but I wish the homework grading was clearer from the start.</p>
+            
+            <h3><b class="rating rating-1">1/5: </b><span class="section-title">Attendance Policy</span></h3>
+            <p>This was the most frustrating part of the course for me. Dr. Smith had an attendance policy that penalized you if you missed more than two classes without an excused absence. While he was understanding if you had a legitimate reason (like illness or a family emergency), there were no exceptions for things like a scheduling conflict or needing to miss class for a job interview. I get that regular attendance is important, but I felt this policy was a bit too rigid, especially since the class was lecture-based and I was able to keep up with the material on my own.</p>
+            
+            <h3><b>Conclusion:</b></h3>
+            <p>Overall, I learned a lot in this class and feel pretty confident about my understanding of Calculus 1. It wasn’t an easy course, but Dr. Smith’s teaching style and the resources he provided made it manageable. If you need a lot of flexibility or aren’t a fan of strict attendance policies, this might not be the best fit for you. But if you can stay on top of your work and manage your time well, you’ll be fine.</p>
+            </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bottom-bar">
+        <a href="https://github.com" target="_blank">GitHub</a>
+    </footer>
+
+</body>
+</html>
